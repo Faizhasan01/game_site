@@ -1,0 +1,42 @@
+<noscript>
+  <h3>Sorry , your browser doesn't support javascript :(</h3>
+</noscript>
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Hangman Game</title>
+  </style>
+</head>
+
+<body>
+  <h1 >Hangman Game</h1>
+  <hr>
+  <h2>There are total 5 chance for incorrect guesses</h2>
+
+  <div id="wordContainer"></div>
+
+  <h3>Incorrect Guesses: 
+    <span style="color:red; font-size:25px;" id="incorrectGuesses"></span>
+  </h3>
+
+  <p id="message">Please Enter a letter between a-z</p>
+
+  <div  id = "text-input">
+    <input  type="text" id="guessInput">
+    <button type="button" class="button" onclick="checkGuess()">Guess</button>
+  </div>
+  
+  <div id ="divRestart">
+    <button type="button"  id="resbutton" onclick="restart()">Play Again</button>
+  </div>
+  <div id="remark"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
